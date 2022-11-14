@@ -1,0 +1,14 @@
+<ul>
+    <% @cars.each do |car| %>
+        <li><h2><%= car %></h2></li>
+    <% end %>
+</ul>
+
+<h2>Type a car name:</h2>
+
+<form action="/answer">
+    <input type="text" name="car" >
+    <input type="submit" value="Submit">
+</form>
+
+<%= link_to "Contact", contact_path %>
